@@ -18,11 +18,15 @@
 			<input type="text" placeholder="Search product">
 		</section>
 		<section class="filters-menu">
-			<button class="filter-toggle">Show Filters</button>
-			<div class="filters">
-				
+			<p class="clickable filter-toggle" onclick="toggleFilters()">Show Filters</p>
+			<div class="filters hidden">
+				<p class="clickable filter">All</p>
+				<p class="clickable filter">Clothes</p>
+				<p class="clickable filter">Electronics</p>
+				<p class="clickable filter">Furniture</p>
 			</div>
 		</section>
 	</main>
+<script src="./js/toggleFilters.js"></script>
 </body>
 </html>

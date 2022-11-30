@@ -3,7 +3,7 @@
 @import url(./variables.min.css);
 *{
 	font-family: "Quicksand", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}header .clickable{
+}.clickable{
 	cursor: pointer;
 }header{
 	display: flex;
@@ -13,6 +13,7 @@
 	border-bottom: 1.5px solid var(--very-light-pink);
 }main .search-menu{
 	padding: 0.4rem 0.8rem 0 0.8rem;
+	margin-bottom: 1.2rem;
 }main .search-menu input{
 	width: 100%;
 	padding: 0.8rem;
@@ -20,4 +21,24 @@
 	outline: none;
 	border: none;
 	background-color: var(--very-light-pink);
+}main .filters-menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}main .filters-menu .filter-toggle{
+	background-color: var(--very-light-pink);
+	padding: 0.4rem;
+	border-radius: 0.4rem;
+}main .filters-menu .filters{
+	display: flex;
+	flex-direction: row;
+	background-color: var(--very-light-pink);
+	padding: 0.4rem;
+	border-radius: 0.4rem;
+}main .filters-menu .filters .filter{
+	background-color: transparent;
+	padding: 0.4rem;
+	border-radius: 0.4rem;
+}main .filters-menu .border-fusion{
+	border-radius: 0.4rem 0.4rem 0 0;
 }
