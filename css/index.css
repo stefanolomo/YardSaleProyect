@@ -1,3 +1,23 @@
 @import url(./fonts.min.css);
 @import url(./normalize.min.css);
 @import url(./variables.min.css);
+*{
+	font-family: "Quicksand", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}header .clickable{
+	cursor: pointer;
+}header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0.5rem;
+	border-bottom: 1.5px solid var(--very-light-pink);
+}main .search-menu{
+	padding: 0.4rem 0.8rem 0 0.8rem;
+}main .search-menu input{
+	width: 100%;
+	padding: 0.8rem;
+	border-radius: 0.4rem;
+	outline: none;
+	border: none;
+	background-color: var(--very-light-pink);
+}
