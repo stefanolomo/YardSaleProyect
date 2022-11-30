@@ -13,7 +13,7 @@
 	border-bottom: 1.5px solid var(--very-light-pink);
 }main .search-menu{
 	padding: 0.4rem 0.8rem 0 0.8rem;
-	margin-bottom: 1.2rem;
+	margin-bottom: 0.8rem;
 }main .search-menu input{
 	width: 100%;
 	padding: 0.8rem;
@@ -39,6 +39,17 @@
 	background-color: transparent;
 	padding: 0.4rem;
 	border-radius: 0.4rem;
+	margin: 0.2rem;
+}main .filters-menu .filters .selected{
+	background-color: var(--darker-green);
 }main .filters-menu .border-fusion{
 	border-radius: 0.4rem 0.4rem 0 0;
+}main .order-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}main .order-menu .dropdown select{
+	outline: none;
+	border: none;
 }
