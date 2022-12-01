@@ -79,5 +79,5 @@
 }main .products .card .container .cart{
 	width: 2em;
 }main .products .card .container .description{
-	color: var(--very-light-pink);
+	color: var(--dark);
 }
