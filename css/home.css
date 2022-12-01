@@ -15,6 +15,7 @@
 	padding: 0.4rem 0.8rem 0 0.8rem;
 	margin-bottom: 0.8rem;
 }main .search-menu input{
+	text-align: center;
 	width: 100%;
 	padding: 0.8rem;
 	border-radius: 0.4rem;
@@ -80,4 +81,41 @@
 	width: 2em;
 }main .products .card .container .description{
 	color: var(--dark);
+}body .responsive-menu{
+	padding: 0.8rem 0 0.8rem 0;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	border-radius: 0 0 0.8rem 0.8rem;
+}body .responsive-menu .categories{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0.8rem 0 0 0;
+}body .responsive-menu .selectable:hover{
+	background-color: var(--hospital-green);
+	padding: 0.4rem;
+	border-radius: 0.2rem;
+}body .responsive-menu hr{
+	margin: 0.8rem 0 0.8rem;
+	outline: none;
+	border: none;
+	height: 1px;
+	background-color: gray;
+	padding: 0 9rem 0 9rem;
+}body .responsive-menu .account-opt{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+}body .responsive-menu .acc-info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
 }

@@ -9,10 +9,26 @@
 </head>
 <body>
 	<header>
-		<img src="./assets/icons/menu_icon.svg" alt="Menu" class="clickable menu">
+		<img src="./assets/icons/menu_icon.svg" alt="Menu" class="clickable menu" onclick="showMenu()">
 		<img src="./assets/logos/logo_yard_sale.svg" alt="Logo" class="logo">
 		<img src="./assets/icons/icon_shopping_cart.svg" alt="Cart" class="clickable cart">
 	</header>
+	<section class="responsive-menu">
+		<h3><b>Categories</b></h3>
+		<div class="categories">
+			<p class="clickable selectable">All</p><p class="clickable selectable">Clothes</p><p class="clickable selectable">Electronics</p><p class="clickable selectable">Furnitures</p><p class="clickable selectable">Toys</p><p class="clickable selectable">Others</p>
+		</div>
+		<hr>
+		<div class="account-opt">
+			<p class="clickable selectable">My orders</p>
+			<p class="clickable selectable">My account</p>
+		</div>
+		<hr>
+		<div class="acc-info">
+			<em>some@email.service</em>
+			<p class="clickable selectable"">Sign out</p>
+		</div>
+	</section>
 	<main>
 		<section class="search-menu">
 			<input type="text" placeholder="Search product">
@@ -40,12 +56,15 @@
 		</section>
 		<section class="products">
 			<div class="card">
-				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
-				<b class="price">$ 120,00</b>
-				<div class="container">
-					<p class="description">Great bike for cycling</p>
-					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
-				</div>
+				<a href="">
+					<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+						alt="Bike" class="product-image">
+					<b class="price">$ 120,00</b>
+					<div class="container">
+						<p class="description">Great bike for cycling</p>
+						<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+					</div>
+				</a>
 			</div>
 			<div class="card">
 				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
@@ -315,5 +334,6 @@
 		</section>
 	</main>
 <script src="./js/toggleFilters.js"></script>
+<script src="./js/toggleMenu.js"></script>
 </body>
 </html>
