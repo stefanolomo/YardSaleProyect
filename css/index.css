@@ -20,30 +20,35 @@
 	border-radius: 0.4rem;
 	outline: none;
 	border: none;
-	background-color: var(--very-light-pink);
+	background-color: var(--text-input-field);
 }main .filters-menu{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 0.2rem;
 }main .filters-menu .filter-toggle{
-	background-color: var(--very-light-pink);
+	border: 2px solid var(--hospital-green);
 	padding: 0.4rem;
 	border-radius: 0.4rem;
+	color: var(--darker-green);
 }main .filters-menu .filters{
 	display: flex;
 	flex-direction: row;
-	background-color: var(--very-light-pink);
-	padding: 0.4rem;
+	padding: 0.2rem;
 	border-radius: 0.4rem;
+	border: 2px solid var(--hospital-green);
 }main .filters-menu .filters .filter{
 	background-color: transparent;
 	padding: 0.4rem;
 	border-radius: 0.4rem;
 	margin: 0.2rem;
 }main .filters-menu .filters .selected{
-	background-color: var(--darker-green);
+	background-color: var(--hospital-green);
+	color: white;
 }main .filters-menu .border-fusion{
 	border-radius: 0.4rem 0.4rem 0 0;
+	border-top: 2px solid var(--hospital-green);
+	border-bottom: none;
 }main .order-menu{
 	display: flex;
 	flex-direction: row;
@@ -52,4 +57,27 @@
 }main .order-menu .dropdown select{
 	outline: none;
 	border: none;
+}main .products{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 2.2rem;
+	margin-top: 0.8rem;
+}main .products .card{
+	min-width: 220px;
+	max-width: 280px;
+	padding: 0.4rem;
+}main .products .card .product-image{
+	width: 100%;
+	border-radius: 1rem;
+}main .products .card .container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}main .products .card .container .cart{
+	width: 2em;
+}main .products .card .container .description{
+	color: var(--very-light-pink);
 }

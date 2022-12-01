@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yard Sale</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<header>
+		<img src="./assets/icons/menu_icon.svg" alt="Menu" class="clickable menu">
+		<img src="./assets/logos/logo_yard_sale.svg" alt="Logo" class="logo">
+		<img src="./assets/icons/icon_shopping_cart.svg" alt="Cart" class="clickable cart">
+	</header>
+	<main>
+		<section class="search-menu">
+			<input type="text" placeholder="Search product">
+		</section>
+		<section class="filters-menu">
+			<p class="clickable filter-toggle" onclick="toggleFilters()">Show Filters</p>
+			<div class="filters hidden">
+				<p class="clickable filter selected">All</p>
+				<p class="clickable filter">Clothes</p>
+				<p class="clickable filter">Electronics</p>
+				<p class="clickable filter">Furniture</p>
+			</div>
+		</section>
+		<section class="order-menu">
+			<div class="container">
+				<b>Order:</b>
+			</div>
+			<div class="dropdown">
+				<select name="select-order" id="select">
+					<option value="recent">Most recent</option>
+					<option value="older">Older</option>
+					<option value="cheaper">Cheaper</option>
+				</select>
+			</div>
+		</section>
+		<section class="products">
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bike" class="product-image">
+				<b class="price">$ 120,00</b>
+				<div class="container">
+					<p class="description">Great bike for cycling</p>
+					<img src="./assets/icons/icon_shopping_cart.svg" alt="Shopping Cart" class="cart">
+				</div>
+			</div>
+			
+		</section>
+	</main>
+<script src="./js/toggleFilters.js"></script>
+</body>
+</html>
